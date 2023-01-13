@@ -1,0 +1,227 @@
+@font-face{
+    src: url("./fonts/Gilroy-Thin.otf");
+    font-family: "Gilroy";
+    font-weight: 200;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Gilroy";
+            box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}option
+
+#main {
+    width: 100%;
+    background-color: #494949;
+}
+
+#nav {
+    display: flex;
+    position: fixed;
+    z-index: 9999999;
+    font-size: 18px;
+    width: 100%;
+    height: 70px;
+    border-bottom: 1px solid rgb(108, 108, 108);
+}
+
+#nav .option {
+    position: relative;
+    display: flex;
+ align-items: center;
+    padding: 0 3vw;
+    color: #fff;
+    width: calc(100%/3);
+    height: 100%;
+    font-size: 16px;
+}
+
+.option .cover {
+    display: flex;
+    padding: 0 3vw;
+ align-items: center;
+    color: #fff;
+    z-index: 999;
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+    height: 0px;
+    backdrop-filter: blur(5px);
+    background-color: rgba(0, 0, 0, 0.294);
+}
+
+.cover span {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.option:nth-child(1) .cover {
+    background-color: #fff;
+    color: #000;
+    height: 3px;
+}
+
+
+#home {
+    width: 100%;
+    height: 100vh;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container img {
+    width: 100%;
+    height: 100%;
+       object-fit: cover;
+}
+
+.container .text {
+    white-space: nowrap;
+    color: #fff;
+}
+
+.container .textdiv {
+    display: flex;
+ align-items: center;
+ justify-content: center;
+    position: absolute;
+    z-index: 9999;
+    width: 100%;
+    height: 100%;
+}
+
+.text h1 {
+    height: fit-content;
+    overflow: hidden;
+    font-size: 8vw;
+    font-weight: 500;
+}
+
+.text h1 span {
+    display: inline-block;
+            transform: translateY(150%);
+}
+
+.text .line {
+   animation: anim 2s cubic-bezier(0.19, 1, 0.22, 1) 1s infinite both;
+    position: relative;
+    width: 0%;
+    height: 8px;
+    background-color: #fff;
+}
+
+#second {
+    width: 100%;
+    height: 100vh;
+}
+
+#third {
+    width: 100%;
+    height: 100vh;
+}
+
+#fourth {
+    width: 100%;
+    height: 100vh;
+}
+#fifth {
+    width: 100%;
+    height: 100vh;
+}
+#sixth {
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+}
+#fs {
+    position: fixed;
+    z-index: 99999;
+    color: #fff;
+    display: flex;
+            align-items: center;
+            justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+}
+
+#fs h1 {
+    position: relative;
+    z-index: 9999;
+    display: flex;
+            align-items: center;
+            justify-content: center;
+    width: 100%;
+    overflow: hidden;
+    height: 8vw;
+}
+
+#fs span {
+    font-size: 10vw;
+    font-weight: 500;
+    display: inline-block;
+            transform: translateY(200%);
+}
+
+#cube {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+ transform: translate(-50%, -50%);
+    width: 0%;
+    height: 0%;
+}
+
+#cube img {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+       object-fit: cover;
+}
+
+@media(max-width: 500px){
+    .text h1{
+        font-size: 14vw;
+    }
+
+    .text .line{
+        height: 5px;
+    }
+
+    .text{
+        max-width: 80%;
+        white-space: wrap;
+    }
+
+    .text h1{
+        display: flex;
+justify-content: center;
+    }
+
+    .option{
+
+     justify-content: center;
+        padding: initial;
+    }
+
+    .option .cover{
+    justify-content: center;
+        padding: initial;
+    }
+}
