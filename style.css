@@ -195,12 +195,6 @@ body {
        object-fit: cover;
 }
 
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
-
-* {
-  font-family: Roboto;
-}
-
 .footer-distributed{
 	background: #444;
 	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
@@ -210,17 +204,6 @@ body {
 	text-align: left;
 	padding: 50px 60px 40px;
 	overflow: hidden;
-}
-
-section {
-  width: 100%;
-  display: inline-block;
-  background: #ccc;
-  height: 60vh;
-  text-align: center;
-  font-size: 22px;
-  font-weight: 700;
-  text-decoration: underline;
 }
 
 
